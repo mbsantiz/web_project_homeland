@@ -1,0 +1,15 @@
+.header {
+  background-color: #2a2c2f;
+}
+
+.header__container {
+  max-width: 255px;
+  max-height: 69px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+.header__logo {
+  padding-top: 34px;
+}
