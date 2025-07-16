@@ -5,9 +5,4 @@
 @import url("../blocks/content.css");
 @import url("../blocks/footer.css");
 @import url("../blocks/media.css");
-
-@font-face {
-  font-family: "Inter";
-  src: url("../vendor/fonts/Inter.ttc");
-  font-weight: normal;
-}
+@import url("../vendor/fonts.css");
