@@ -3,6 +3,8 @@
 🌍 Proyecto "De patria a patria" — Sprint 5 | TripleTen Bootcamp
 Este proyecto fue desarrollado por Marcos Santiz como parte del Sprint 5 del bootcamp de desarrollo web de TripleTen.
 
+https://mbsantiz.github.io/web_project_homeland/
+
 📄 Descripción
 "De patria a patria" es una página web responsiva que presenta una galería interactiva dedicada a resaltar la diversidad cultural de los miembros de la comunidad de TripleTen. El sitio ofrece una experiencia visual adaptable a múltiples dispositivos, desde teléfonos móviles hasta pantallas de escritorio, utilizando prácticas modernas de diseño responsivo con HTML y CSS puro.
 
