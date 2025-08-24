@@ -27,7 +27,9 @@
     margin-left: auto;
     margin-top: 64px;
   }
-
+  .intro {
+    margin: 0 auto;
+  }
   .intro__title {
     font-family: Inter;
     font-weight: 900;
@@ -35,9 +37,71 @@
     line-height: 1.5;
     letter-spacing: 0%;
   }
-}
+  .photogrid {
+    max-width: 288px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 38px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    gap: 12px;
+  }
 
-@media screen and (max-width: 1023px) and (min-width: 544px) {
+  .places {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "Title"
+      "Artist"
+      "Image"
+      "Paragraph"
+      "Button";
+    row-gap: 30px;
+    margin-top: 62px;
+    margin-bottom: 65px;
+    max-width: 320px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .places__button {
+    grid-area: Button;
+    max-width: 288px;
+    width: 100%
+    justify-self: center;
+    padding: 15px 0;
+    margin: 0;
+    font-size: 14px;
+  }
+
+  .places__left {
+    display: contents;
+  }
+
+  .places__left-image {
+    padding-bottom: 0;
+  }
+
+  .places__title {
+    max-width: 288px;
+    font-size: 32px;
+  }
+
+  .places__left-image {
+    max-width: 320px;
+    width: 100%;
+    grid-area: Image;
+  }
+
+  .places__paragraph {
+    font-size: 16px;
+  }
+
+  .places__artist-name {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 768px) and (min-width: 544px) {
   .header__logo {
     max-width: 254px;
     max-height: 66px;
@@ -67,11 +131,164 @@
     margin-top: 90px;
   }
 
+  .intro {
+    margin: 0 auto;
+  }
+
   .intro__title {
     font-family: Inter;
     font-weight: 900;
     font-size: 45px;
     line-height: 1.5;
     letter-spacing: 0%;
+  }
+  .photogrid {
+    max-width: 288px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 38px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    gap: 12px;
+  }
+
+  .places {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "Title"
+      "Artist"
+      "Image"
+      "Paragraph"
+      "Button";
+    row-gap: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 62px;
+    margin-bottom: 65px;
+    max-width: 320px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .places__button {
+    grid-area: Button;
+    justify-self: center;
+    max-width: 288px;
+    margin: 0;
+  }
+
+  .places__left {
+    display: contents;
+  }
+
+  .places__left-image {
+    padding-bottom: 0;
+  }
+
+  .places__title {
+    max-width: 340px;
+    font-size: 42px;
+  }
+
+  .places__left-image {
+    max-width: 320px;
+    width: 100%;
+    grid-area: Image;
+  }
+
+  .places__paragraph {
+    font-size: 16px;
+    grid-area: Paragraph;
+  }
+
+  .places__artist-name {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .header__logo {
+    max-width: 254px;
+    max-height: 66px;
+    padding-top: 30px;
+    margin: auto;
+  }
+
+  .cover__container {
+    max-width: 100%;
+  }
+
+  .cover__title {
+    font-weight: 900;
+    font-size: 75px;
+  }
+
+  .cover__subheading {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1.5;
+  }
+  .content {
+    max-width: 720px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 90px;
+  }
+
+  .intro {
+    margin: 0 auto;
+  }
+
+  .intro__title {
+    font-family: Inter;
+    font-weight: 900;
+    font-size: 45px;
+    line-height: 1.5;
+    letter-spacing: 0%;
+  }
+  .photogrid {
+    max-width: 720px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 64px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 16px;
+  }
+
+  .places {
+    grid-template-columns: 340px 352px;
+    column-gap: 28px;
+    margin-top: 88px;
+    margin-bottom: 72px;
+  }
+
+  .places__title {
+    max-width: 340px;
+    max-height: 46px;
+    font-size: 42px;
+  }
+
+  .places__left-image {
+    max-height: 340px;
+  }
+
+  .places__paragraph {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1279px) and (min-width: 1024px) {
+  .photogrid {
+    max-width: 720px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 64px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 16px;
   }
 }
