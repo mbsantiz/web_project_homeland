@@ -100,5 +100,9 @@
   letter-spacing: 0%;
   grid-area: Paragraph;
   align-self: start;
+  margin: 0 0 25px 0;
+}
+
+.places__right {
   margin: 0;
 }
